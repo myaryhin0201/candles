@@ -40,6 +40,7 @@ module.exports = env => ({
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',
+      filename:'./index.html',
       minify: {
         collapseWhitespace: true,
         removeComments: true,
@@ -48,6 +49,20 @@ module.exports = env => ({
         removeStyleLinkTypeAttributes: true,
         useShortDoctype: true,
       },
+      
+    }),
+        new HtmlWebpackPlugin({
+          template: './html/views/polityka.html',
+          filename: './html/views/polityka.html',
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true,
+      },
+      
     }),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css',

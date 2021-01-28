@@ -12,7 +12,7 @@
                 "message": "Nasza strona korzysta z plików cookie w celu realizacji potrzeb użytkowników. W przeglądarce można zmienić ustawienia dotyczące cookies.",
                 "dismiss": "Rozumiem",
                 "link": "Więcej informacji",
-                "href": "/html/views/polityka.html"
+                "href": "./html/views/polityka.html"
             }
         };
 

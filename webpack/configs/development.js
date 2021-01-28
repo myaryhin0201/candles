@@ -19,19 +19,15 @@ module.exports = env => ({
     ],
   },
   plugins: [
-    //   new HtmlWebpackPlugin({
-    //   template: './index.html',
-    // }),
-    // new HtmlWebpackPlugin({
-    //   template: './html/views/polityka.html',
-    // }),
-            new HtmlWebpackPlugin({
-            template: "./index.html"
-        }),
-        // new HtmlWebpackPlugin({
-        //     template: "./html/views/polityka.html",
-        //     chunks: ["page2"],
-        // }),
+      new HtmlWebpackPlugin({
+        template: './index.html',
+        filename: './index.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './html/views/polityka.html',
+      filename: './html/views/polityka.html',
+    }),
+
   ],
   devServer: {
     contentBase: paths.BUILD_DIR,
